@@ -61,9 +61,8 @@ jobs:
       - run:
           name: Run Jest Tests
           command: yarn test-ci
-          working_directory: packages/storybook
       - store_artifacts:
-          path: packages/storybook/coverage
+          path: coverage
   visual-test:
     <<: *defaults
     steps:
